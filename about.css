@@ -1,0 +1,100 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+    background-color: #ffc5cb;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Amita";
+    src: url("static/fonts/Amita-Regular.ttf");
+}
+
+.phone_navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+.phone_heading {
+    font-family: 'Amita';
+    letter-spacing: 1.5;
+    opacity: 1;
+    color: black;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 30%;
+    bottom: 40%;
+    border-radius: 50%;
+    z-index: 0;
+    box-shadow: 1px 2px 10px 2px black;
+}
+
+.phone_about {
+    background-color: #F5F5DC;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "one" "two" "two" "two";
+    width: 100%;
+    height: 100vh;
+}
+
+.phone_firstpart {
+    grid-area: one;
+    background-color: #ffb6c1;
+    z-index: 0.5;
+    box-shadow: 1px 2px 6px 2px black;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.phone_secondpart {
+    align-items: center;
+    justify-content: center;
+}
+
+.phone_sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    color: black;
+    background-color: #ffc5cb;
+    font-weight: lighter;
+    z-index: 2;
+}
+
+.phone_sidebar_x {
+    position: relative;
+    left: 40%;
+    font-size: 30px;
+}
+
+.hidden {
+    display: none;
+}

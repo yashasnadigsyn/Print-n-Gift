@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Print'n'Gift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lobster+Two:ital@1&family=Luxurious+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body onload="hideLoadingDiv()">
+    <div class="phone_full_page_container_first">
+        <div class="first_white_screen">
+        </div>
+        <div class="second_white_screen">
+        </div>
+    </div>
+    <div class="phone_full_page_container_second hidden">
+        <div class="show_logo">
+           <img src="static/Images/image-removebg-preview.svg" alt="">
+        </div>
+    </div>
+    <div class="phone_full_page_container_third hidden">
+        <div class="third_white_screen">
+        </div>
+        <div class="fourth_white_screen">
+        </div>
+    </div>
+    <div class="phone_final_screen hidden">
+        <div class="phone_navbar">
+            <div class="phone_heading">
+                <p onclick="go_to_home()" >Print'n'Gift</p>
+            </div>
+            <div class="phone_menu_bar">
+                <img onclick="open_sidebar()" src="static/Images/menu.svg" alt="">
+            </div>            
+        </div>
+        <div class="phone_secondtab">
+            <div class="phone_secondtab_we"><p>We</p></div><div class="phone_secondtab_print"><p>Speak</p></div><div class="phone_secondtab_hapiness"><p>Fluent Ink.</p></div>
+            <br><div class="phone_secondtab_quote">
+                <p>Turning your pixels into paper with over a decade of experience...</p>
+            </div>
+            <br><div class="phone_secondtab_btns">
+                <div class="phone_secondtab_btn ourservices">
+                    <a href="services.html">OUR SERVICES</a>
+                </div>
+                <div class="phone_secondtab_btn aboutus">
+                    <a href="about.html">ABOUT US</a>
+                </div>
+            </div>
+        </div>
+        <div class="phone_thirdtab">
+            <div class="phone_thirdtab_meet">
+                MEET US AT: 
+            </div><br>
+            <div class="phone_thirdtab_address">
+                1st Cross, Wilson Garden, Bengaluru - 560 027
+            </div>
+            <div class="phone_thirdtab_maps">
+                <img src="static/Images/location.svg" alt=""><a href="https://maps.app.goo.gl/4qJzX6cQoHQXaT9N9">Google maps</a>
+            </div>
+        </div>
+    </div>
+    <div class="phone_sidebar hidden">
+        <div class="phone_sidebar_x">
+            <p onclick="close_sidebar()">X</p>
+        </div>
+        <div class="phone_sidebar_home">
+            <p><a href="">Home</a></p>
+        </div>
+        <div class="phone_sidebar_about">
+            <p><a href="about.html">About</a></p>
+        </div>
+        <div class="phone_sidebar_services">
+            <p><a href="services.html">Services</a></p>
+        </div>
+    </div>
+</body>
+</html>

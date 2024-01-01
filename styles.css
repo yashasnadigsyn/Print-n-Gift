@@ -1,0 +1,309 @@
+:root {
+    --main-bg:#ffb6c1;
+    --cards: hsl(234, 26%, 57%);
+    --all-texts: black;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+
+    background-color: #ffc5cb;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes first_white_screen_transition {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-500px);
+    }
+}
+
+@keyframes second_white_screen_transition {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(500px);
+    }
+}
+
+@keyframes third_white_screen_transition {
+    from {
+        transform: translateX(-500px);
+        background-color: white;
+    }
+
+    to {
+        transform: translateX(0px);
+        background-color: var(--main-bg);
+    }
+}
+
+@keyframes fourth_white_screen_transition {
+    from {
+        transform: translateX(500px);
+        background-color: white;
+    }
+
+    to {
+        transform: translateX(0px);
+        background-color: var(--main-bg);
+    }
+}
+
+@keyframes logo_show {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }    
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes we {
+    0% {
+        opacity: 0;
+        transform: translateY(80%)
+    }    
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@font-face {
+    font-family: "Amita";
+    src: url("static/fonts/Amita-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.phone_full_page_container_first {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "one two";
+    background-color: var(--main-bg);
+    width: 100%;
+    height: 100vh;
+}
+
+.first_white_screen {
+    grid-area: one;
+    background-color: white;
+
+    animation: first_white_screen_transition 1s ease-in 0s 1 normal forwards;
+}
+
+.second_white_screen {
+    grid-area: two;
+    background-color: white;
+
+    animation: second_white_screen_transition 1s ease-in 0s 1 normal forwards;
+}
+
+.phone_full_page_container_second {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "oni";
+    background-color: var(--main-bg);
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.show_logo {
+    grid-area: oni;
+    padding: 40px;
+    animation: logo_show 1s ease-in-out 0s 1 normal forwards;
+}
+
+.phone_full_page_container_third {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "three four";
+    background-color: var(--main-bg);
+    width: 100%;
+    height: 100vh;
+}
+
+.third_white_screen {
+    grid-area: three;
+    
+    animation: third_white_screen_transition 1s ease-in 0s 1 normal forwards;
+}
+
+.fourth_white_screen {
+    grid-area: four;
+
+    animation: fourth_white_screen_transition 1s ease-in 0s 1 normal forwards;
+}
+
+.phone_final_screen {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2 1fr);
+    grid-template-areas: "five" "six";
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5DC;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.phone_navbar {
+    grid-area: five;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 0.5;
+    box-shadow: 1px 2px 6px 2px #1B1B1B;
+}
+
+.phone_heading {
+    font-family: 'Amita';
+    letter-spacing: 1.5;
+    opacity: 1;
+    color: black;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.phone_menu_bar {
+    padding: 20px;
+}
+
+.phone_secondtab {
+    background-color: var(--main-bg);
+    font-family: 'Amita';
+    letter-spacing: 1.5;
+    opacity: 1;
+    color: var(--all-texts);
+    padding-left: 30px;
+    font-size: 35px;
+    padding-bottom: 90px;
+    padding-right: 5px;
+}
+
+.phone_secondtab_we {
+    padding: 0;
+    padding-top: 50px;
+    margin: 0;
+
+    animation: we 2s ease-out 0s 1 normal forwards;
+}
+.phone_secondtab_print {
+    padding: 0;
+    margin: 0;
+
+    animation: we 2s ease-out 0s 1 normal forwards;
+}
+.phone_secondtab_hapiness {
+    padding: 0;
+    margin: 0;
+
+    animation: we 2s ease-out 0s 1 normal forwards;
+}
+
+.phone_secondtab_quote {
+    font-size: x-large;
+}
+
+.phone_thirdtab {
+    background-color: #F5F5DC;
+    font-family: 'Amita';
+    letter-spacing: 1.5;
+    color: var(--all-texts);
+    padding-top: 30px;
+    padding-left: 30px;
+    z-index: 0.5;
+    box-shadow: 1px 2px 6px 2px #1B1B1B;
+}
+
+.phone_thirdtab_meet {
+    font-size: 25px;
+}
+
+.phone_thirdtab_address {
+    font-size: 20px;
+}
+
+.phone_thirdtab_maps {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.phone_thirdtab a {
+    color: #ffb166;
+}
+
+.phone_sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    color: black;
+    background-color: #ffc5cb;
+    font-weight: lighter;
+}
+
+.phone_sidebar_x {
+    position: relative;
+    left: 40%;
+    font-size: 30px;
+}
+
+.phone_secondtab_btns {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.phone_secondtab_btn {
+    border: 1px solid black;
+    background-color: transparent;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

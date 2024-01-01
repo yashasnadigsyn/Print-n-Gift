@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="services.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="services.js"></script>
+</head>
+<body>
+    <div class="phone_fullpage_services">
+        <div class="phone_navbar">
+           <p onclick="go_to_home()">Print'n'Gift</p>
+           <img onclick="open_sidebar()" width="40" height="40" src="static/Images/menu.svg" alt="">
+        </div>
+        <div class="phone_ourservices">
+            <p>Our Services</p>
+        </div>
+        <div class="phone_content">
+            <div onclick="expand_card1()" class="card1">
+                <p>Printed Stationery</p>
+            </div>
+            <ul class="hidden_items_card1 hidden">
+                <br>
+                <li>Visiting Cards</li>
+                <li>Letter Heads</li>
+                <li>Bill Books</li>
+                <li>Cash Memos</li>
+                <li>Certificates</li>
+                <li>Invitations</li>
+                <li>Annual Report</li>
+                <li>Leaflets</li>
+                <li>Coasters</li>
+                <li>Adv. Layouts</li>
+                <li>Menu Card</li>
+                <li>Posters</li>
+                <li>News Letters</li>
+                <li>New Year Diaries</li>
+                <li>School Diaries</li>
+                <li>School ID Cards</li>
+                <li>Lanyards</li>
+                <li>Flyers</li>
+                <li>Wedding Card</li>
+                <li>Labels</li>
+                <br>
+            </ul>                  
+            <div onclick="expand_card2()" class="card2">
+                <p>Promotional Items</p>
+            </div>
+            <ul class="hidden_items_card2 hidden">
+                <br/>
+                <li>Brochures</li>
+                <li>Calendars</li>
+                <li>Table Calendars</li>
+                <li>Banners</li>
+                <li>Standees</li>
+                <li>Personalized Calendars</li>
+                <li>Coffee Mugs</li>
+                <br/>
+              </ul>
+            <div onclick="expand_card3()" class="card3">
+                <p>Specialized Items</p>
+            </div>
+            <ul class="hidden_items_card3 hidden">
+                <br/>
+                <li>Sweet/Cake Boxes</li>
+                <li>Paper Bags</li>
+                <li>Flyers</li>
+                <li>Wedding Card</li>
+                <li>Certificates</li>
+                <br/>
+            </ul>              
+        </div>
+    </div>   
+    <div class="phone_sidebar hidden">
+        <div class="phone_sidebar_x">
+            <p onclick="close_sidebar()">X</p>
+        </div>
+        <div class="phone_sidebar_home">
+            <p><a href="">Home</a></p>
+        </div>
+        <div class="phone_sidebar_about">
+            <p><a href="about.html">About</a></p>
+        </div>
+        <div class="phone_sidebar_services">
+            <p><a href="services.html">Services</a></p>
+        </div>
+    </div> 
+</body>
+</html>
